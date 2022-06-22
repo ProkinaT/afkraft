@@ -163,7 +163,7 @@
 }
 }
 /* iphone 414*896*/
-@media all and (min-device-width: 361px) and (max-device-width: 414px){
+@media all and (max-device-width: 414px){
  body {
   width: 414px;
   height: 6272px;
