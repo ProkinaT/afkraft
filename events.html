@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/i.ico" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <title>Afkraft.Events</title>
+  <style>
+
+  body {
+  position: absolute;
+  background-color: white;
+  opacity: 1;
+  width: 1440px;
+  height: 2700px;
+  overflow-x: hidden;
+}
+/* ФРЭЙМ 1 */
+.f1 {
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+.f1 h1 {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  top: 108px;
+}
+.t1, .t2, .t3, .t4, .t5, .t6, .t7, .t8, .t9, .t10, .t11 {
+  position: relative;
+  width: 51px;
+  height: 47px;
+  background-image: url('images/triangle.svg');
+}
+.tb1, .tb2, .tb3, .tb4, .tb5, .tb6, .tb7, .tb8 {
+  position: relative;
+  width: 53px;
+  height: 47px;
+  background-image: url('images/triangleb.svg');
+}
+.zigzag1, .zigzag2 {
+  position: relative;
+  width: 296px;
+  height: 42px;
+  background-image: url('images/zigzag.svg');
+}
+.t1 {
+  top: 113px;
+  left: 6.73vw;
+}
+.tb1 {
+  top: 115px;
+  left: 4.8vw;
+}
+.tb2 {
+  top: 69px;
+  left: 8.8vw;
+}
+.tb3 {
+  top: 21px;
+  left: 12.6vw;
+}
+.tb4 {
+  top: -25px;
+  left: 16.5vw;
+}
+.t2 {
+  top: -5px;
+  left: 12.8vw;
+}
+.t3 {
+  top: -53px;
+  left: 16.5vw;
+}
+.t4 {
+  top: -99px;
+  left: 20.3vw;
+}
+.t5 {
+  top: -147px;
+  left: 24vw;
+}
+.zigzag1 {
+  top: -107px;
+  left: 19vw;
+}
+.zigzag2 {
+  top: -44px;
+  left: 5.6vw;
+}
+.vase1 {
+  position: relative;
+  top: -270px;
+  left: 51.4vw;
+  width: 405px;
+  height: 360px;
+  background-image: url('images/orvase.png');
+}
+.vase2 {
+  position: relative;
+  top: -791px;
+  left: 75.4vw;
+  width: 293px;
+  height: 420px;
+  background-image: url('images/bluevase.png');
+}
+/* ФРЭЙМ 2 */
+.f2 {
+  display: block;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+h1 {
+  position: relative;
+  display: block;
+  left: 4.4vw;
+  top: 14px;
+}
+.f2 h1 {
+  width: 60vw;
+}
+h1 .element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+.t6 {
+  top: -96px;
+  left: 66vw;
+}
+.t7 {
+  transform: rotate(180deg);
+  top: -144px;
+  left: 68.8vw;
+}
+.tb5 {
+ transform: rotate(180deg);
+ top: -190px;
+ left: 74.6vw;
+}
+.tb6 {
+  transform: rotate(180deg);
+  top: -237px;
+  left: 78.2vw;
+}
+.tb7 {
+  transform: rotate(180deg);
+  top: -284px;
+  left: 81.8vw;
+}
+.f2 p{
+  display: block;
+  position: relative;
+  left: 4.6vw;
+  width: 30vw;
+}
+.f2 p:first-of-type{
+  top: -164px;
+}
+.f2 p:nth-of-type(2) {
+  top: -136px;
+}
+p a {
+  color: white;
+  text-decoration: none;
+}
+p a:hover {
+text-decoration: underline;
+}
+.vorkshops {
+  display: flex;
+  position: relative;
+  top: -711px;
+  left: 35.2vw;
+  width: 60.2vw;
+  height: 645px;
+}
+.carousel1 {
+  display:block;
+  position: relative;
+  width: 427px;
+  height: 645px;
+}
+.carousel2 {
+  display:block;
+  position: relative;
+  width: 427px;
+  height: 645px;
+  left: 1vw;
+}
+#posters1 {
+  position: relative;
+  top:0;
+  width: 427px;
+  height: 645px;
+}
+.v1 {
+  display:none;
+  background-image: url('images/vork1.png');
+  left: 0px;
+}
+.v2 {
+  display:none;
+  background-image: url('images/vork2.png');
+  left: 0px;
+}
+.v3 {
+  display:none;
+  background-image: url('images/vork3.png');
+  left: 0px;
+}
+.v4 {
+  display:none;
+  background-image: url('images/module3.png');
+  left: 0px;
+}
+#dop {
+  background: black;
+  position: relative;
+  opacity: 0.7;
+  width: 424px;
+  height: 98px;
+  left: 1px;
+  color: white;
+}
+#dop p {
+  opacity: 1;
+  top: 21px;
+  left: 12px;
+  position: relative;
+}
+.inf1, .inf2, .inf3, .inf4 {
+display: none;
+top: 547px;
+}
+.inf4 {
+  opacity: 0.9;
+}
+button {
+  display: none;
+  position: relative;
+  top: -289px;
+  width: 63px;
+  height: 63px;
+  background-position: 0px -22px;
+}
+.b1{
+  left: 0;
+  background-image: url('images/arrow1.svg');
+}
+.b2{
+  left: 363px;
+  background-image: url('images/arrow.svg');
+}
+/* ФРЭЙМ 3 */
+.f3 {
+  display: block;
+  position: absolute;
+  top: 1800px;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+.f3 h1{
+  width: 54vw;
+}
+.lections {
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 65px;
+  height: 579px;
+  width: 60.2vw;
+}
+.place1 {
+  position: relative;
+  width: 426px;
+  height: 579px;
+  top:0;
+  left: 0;
+}
+.place2 {
+  position: relative;
+  width: 426px;
+  height: 579px;
+  top:0;
+  left: 1vw;
+}
+#posters2 {
+  position: relative;
+  top: 0;
+  width: 426px;
+  height: 579px;
+}
+.l1 {
+  display:none;
+  background-image: url('images/lekt1.png');
+  left: 0px;
+}
+.l2 {
+  display: none;
+  background-image: url('images/lekt2.png');
+  left: 0px;
+}
+.l3 {
+  display:none;
+  background-image: url('images/lekt2.png');
+  left: 0px;
+}
+.l4 {
+  display:none;
+  background-image: url('images/lekt3.png');
+  left: 0px;
+}
+.inf5, .inf6, .inf7 {
+  display: none;
+  top: 481px;
+}
+.b3 {
+  position: absolute;
+  top: 267px;
+  left: 0;
+  background-image: url('images/arrow1.svg');
+}
+ .b4 {
+   position: absolute;
+  top: 267px;
+  left: 363px;
+  background-image: url('images/arrow.svg');
+}
+.f3 p{
+  display: block;
+  position: relative;
+  left: 66.1vw;
+  width: 30vw;
+}
+.f3 p:first-of-type{
+  top: -526px;
+}
+.f3 p:nth-of-type(2) {
+  top: -503px;
+}
+.t8, .t9, .t10, .t11 {
+  transform: rotate(180deg);
+}
+.t8 {
+  top: -171px;
+  left: 81.4vw;
+}
+.t9 {
+  top: -217px;
+  left: 85vw;
+}
+.t10 {
+  top: -264px;
+  left: 88.5vw;
+}
+.t11 {
+  top: -311px;
+  left: 92.1vw;
+}
+.tb8 {
+  top: -394px;
+  left: 83.2vw;
+  transform: rotate(180deg);
+}
+.block {
+  display: block;
+}
+/* ФУТТЕР */
+.futter {
+  bottom: -18px;
+}
+  </style>
+  <link rel="stylesheet" href="stylesheets/responsive_events.css">
+  <script>
+  $(document).ready(function(){
+  $(".b2").click(function(){
+    $('.v1').removeClass("block");
+    $('.v2').addClass("block");
+    $('.v3').removeClass("block");
+    $('.v4').addClass("block");
+    $('.b2').removeClass("block");
+    $('.b1').addClass("block");
+  });
+});
+  $(function(){
+  $(".b1").click(function(){
+    $('.v2').removeClass("block");
+    $('.v1').addClass("block");
+    $('.v4').removeClass("block");
+    $('.v3').addClass("block");
+    $('.b1').removeClass("block");
+    $('.b2').addClass("block");
+  });
+});
+$(function(){
+$(".b4").click(function(){
+  $('.l1').removeClass("block");
+  $('.l2').addClass("block");
+  $('.l3').removeClass("block");
+  $('.l4').addClass("block");
+  $('.b4').removeClass("block");
+  $('.b3').addClass("block");
+});
+});
+$(function(){
+$(".b3").click(function(){
+  $('.l2').removeClass("block");
+  $('.l1').addClass("block");
+  $('.l4').removeClass("block");
+  $('.l3').addClass("block");
+  $('.b3').removeClass("block");
+  $('.b4').addClass("block");
+});
+});
+  $(function(){
+  $(".v1").click(function(){
+    $('.inf1').toggleClass("block");
+  });
+  });
+  $(function(){
+  $(".v2").click(function(){
+    $('.inf2').toggleClass("block");
+  });
+  });
+  $(function(){
+  $(".v3").click(function(){
+    $('.inf3').toggleClass("block");
+  });
+  });
+  $(function(){
+  $(".v4").click(function(){
+    $('.inf4').toggleClass("block");
+  });
+  });
+  $(function(){
+  $(".l1").click(function(){
+    $('.inf5').toggleClass("block");
+  });
+  });
+  $(function(){
+  $(".l2, .l3").click(function(){
+    $('.inf6').toggleClass("block");
+  });
+  });
+  $(function(){
+  $(".l4").click(function(){
+    $('.inf7').toggleClass("block");
+  });
+  });
+  $(function() {
+  $('.t1, .t2, .t3, .t4, .t5, .t6, .t7, .t8, .t9, .t10, .t11, .tb1, .tb2, .tb3, .tb4, .tb5, .tb6, .tb7, .tb8, .zigzag1, .zigzag2').draggable();
+  });
+  </script>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-items">
+      <a class="logo"  id="input_button_bg_change" href="index.html"</a>
+      <a  class="sob"  id="text" href="events.html">События</a>
+      <a class="map" id="text"  href="map.html">Карта</a>
+      <a  class="affest" id="text" href="affest.html">Affest</a>
+      <a  class="shop" id="text" href="shop.html">Магазин</a>
+      <a class="we" id="text"  href="about.html">О нас</a>
+    </div>
+  </div>
+  <div class="f1">
+    <h1>Afkraft — не только<br>ярмарка, но и способ<br>провести время с пользой</h1>
+    <div class="t1"></div>
+    <div class="tb1"></div>
+    <div class="tb2"></div>
+    <div class="tb3"></div>
+    <div class="tb4"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+    <div class="t4"></div>
+    <div class="t5"></div>
+    <div class="zigzag1"></div>
+    <div class="zigzag2"></div>
+    <div class="vase1"></div>
+    <div class="vase2"></div>
+  </div>
+  <div class="f2">
+    <h1>Посетите наши воркшопы,<br>гуляя по территории ярмарки</h1>
+    <div class="t6"></div>
+    <div class="t7"></div>
+    <div class="tb5"></div>
+    <div class="tb6"></div>
+    <div class="tb7"></div>
+    <p>Гостям ярмарки Afkraft предлагается посетить один&nbspиз трёх воркшопов: койсанские маски, традиционнные африканские юбки или кенийские вазы.</p>
+    <p>На воркшопах вы научитесь&nbspне только создавать уникальные предметы искусства, но&nbspи&nbspработать с&nbspматериалами, а&nbspтакже узнаете о&nbspтрадиционных африканских росписях&nbspи&nbspузорах.</p>
+  </div>
+  <div class="vorkshops">
+    <div class="carousel1">
+      <div id="posters1" class="v1 block">
+        <div  id="dop" class="inf1">
+          <p>Кенийские вазы<br>13:00 аудитория 1</p>
+        </div>
+      </div>
+      <div  id="posters1" class="v2">
+        <div id="dop" class="inf2">
+          <p>Традиционные африканские юбки<br>14:00 аудитория 6</p>
+        </div>
+      </div>
+      <button class="b1"></button>
+  </div>
+    <div class="carousel2">
+      <div id="posters1" class="v3 block">
+        <div id="dop" class="inf3">
+          <p>Койсанские маски<br>16:00 аудитория 3</p>
+        </div>
+      </div>
+      <div id="posters1" class="v4">
+        <div  id="dop" class="inf4">
+          <p>Попробуй себя в роли дизайнера<br><a href="https://prokinat.github.io/AFKRAFT3/">Собери маску</a></p>
+        </div>
+      </div>
+      <button class="b2 block"></button>
+    </div>
+  </div>
+  <div class="f3">
+    <h1>Узнайте больше об&nbspискусстве регионов Африки в&nbspнашем лектории</h1>
+    <div class="lections">
+      <div class="place1">
+        <div id="posters2" class="l1 block">
+          <div id="dop" class="inf5">
+            <p>Матвей Антаков<br>18:00 аудитория 114</p>
+          </div>
+        </div>
+        <div id="posters2" class="l2">
+          <div id="dop" class="inf6">
+            <p>Аиша Торос<br>15:00 аудитория 200</p>
+          </div>
+        </div>
+        <button class="b3"></button>
+      </div>
+      <div class="place2">
+        <div id="posters2" class="l3 block">
+          <div id="dop" class="inf6">
+            <p>Аиша Торос<br>15:00 аудитория 200</p>
+          </div>
+        </div>
+        <div id="posters2" class="l4">
+          <div id="dop" class="inf7">
+            <p>Алина Малинова<br>17:00 аудитория 20</p>
+          </div>
+        </div>
+        <button class="b4 block"></button>
+      </div>
+    </div>
+    <p>Лекторий Afkraft – место, где вы сможете ближе познакомиться с&nbspтаинственной африканской культурой.</p>
+    <p>Лекторы проводят выступления по&nbspтрём темам: керамика Африки, узоры в&nbspтекстиле Африки, последствия магии вуду.</p>
+    <div class="t8"></div>
+    <div class="t9"></div>
+    <div class="t10"></div>
+    <div class="t11"></div>
+    <div class="tb8"></div>
+    <div class="futter">
+      <a  class="contacts"  id="text">Контакты<br>+7-(191)-955-93-82</a>
+      <a class="support" id="text"  href="#">Тех. поддержка</a>
+      <a  class="sotrud" id="text" href="#">Сотрудничество</a>
+      <a  class="me" id="text">designed by<br>Tatiana Prokina</a>
+      <a class="hse"></a>
+    </div>
+  </div>
+
+</body>
+</html>

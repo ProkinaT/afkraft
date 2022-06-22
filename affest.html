@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/i.ico" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <title>Affest</title>
+  <script defer src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+
+  body {
+    width: 1440px;
+    height: 900px;
+    opacity: 1;
+    position: absolute;
+    background: #252525;
+    overflow-x: hidden;
+  }
+  /* ВИДОС */
+  .slide-show {
+    position: relative;
+    top: 51px;
+    width: 100%;
+    height: 849px;
+    background-image: url('images/video1.png');
+    background-size: 1440px 849px;
+  }
+  .start {
+    animation: video 12s infinite;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+  }
+  .titul {
+    position: relative;
+    top: 278px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 45px;
+    background-image: url('images/titul.svg');
+    background-repeat: no-repeat;
+  }
+  .slide-show .but {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88px;
+    height: 90px;
+    top: 316px;
+    background-image: url('images/play.svg');
+    background-repeat: no-repeat;
+  }
+  /* ФРЭЙМ 2 */
+  .f2 {
+    top: 900px;
+    width: 100%;
+    display: flex;
+  }
+  /* ОБ АФФЕСТЕ */
+  .about {
+    display: block;
+    width: 50%;
+    height: 860px;
+    background-image: url('images/affest night.png');
+    background-size: 100% 860px;
+  }
+
+  .about h2 {
+    position: relative;
+    color: white;
+    top: 81px;
+    line-height: 1.1;
+    left: 4.7vw;
+  }
+  .about a {
+    position: relative;
+    top: 101px;
+    left: 4.7vw;
+    color: white;
+    text-decoration: none;
+  }
+  /* ФОРМА */
+  .form {
+    display: block;
+    width: 50%;
+    height: 860px;
+    background: white;
+  }
+  .form h2 {
+    position: relative;
+    color: black;
+    top: 80px;
+    left: 1vw;
+  }
+  #big {
+    position: relative;
+    display:block;
+    box-sizing: border-box;
+    width: 421px;
+    height: 70px;
+    left: 0.7vw;
+    border: 2px solid #252525;
+    font-size: 20px;
+    padding-left: 8px;
+  }
+  #small {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 204px;
+    height: 70px;
+    border: 2px solid #252525;
+    font-size: 20px;
+    padding-left: 8px;
+  }
+
+  .i1 {
+    top: 107px;
+  }
+  .i2 {
+    top: 130px;
+  }
+  .i3 {
+    top: 151px;
+    left: 1vw;
+  }
+  .i4 {
+    top: 82px;
+    left: 16vw;
+  }
+  .i5 {
+    top: 106px;
+    left: 13px;
+  }
+   button {
+     border: none;
+     background: #252525;
+     color: white;
+     text-align: center;
+     top: 169px;
+     left: 16vw;
+  }
+  button:hover {
+   background:#D67C0F;
+  }
+  .inf {
+    position: relative;
+    background:#D67C0F;
+    box-sizing: border-box;
+    font-family: 'Pragmatical';
+    width: 100%;
+    top: 313px;
+    height: 82px;
+    font-size: 20px;
+  }
+  .inf a{
+    position: relative;
+    left: 165px;
+    top: 14px;
+    color: black;
+    width: 100px;
+  }
+    /* ФУТТЕР */
+  .futter {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+  }
+    /* ВСПЛЫВАЛКА */
+  .ok {
+    display: none;
+    position: relative;
+    background-color: #D67C0F;
+    width: 40vw;
+    height: 150px;
+    top: -492px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ok p {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .ok button {
+    width: 77px;
+    height: 40px;
+    margin-left: 17vw;
+    margin-top: 13px;
+  }
+  .b2:hover{
+    background: black;
+  }
+  .appear {
+    display: block;
+  }
+  .blur {
+    filter: blur(5px);
+  }
+@keyframes video {
+  12% {background-image: url('images/video1.png');}
+  24% {background-image: url('images/video2.png');}
+  36% {background-image: url('images/video3.png');}
+  50% {background-image: url('images/video4.png');}
+  62% {background-image: url('images/video5.png');}
+  74% {background-image: url('images/video6.png');}
+  86% {background-image: url('images/video7.png');}
+}
+</style>
+  <link rel="stylesheet" href="stylesheets/responsive_affest.css">
+<script>
+$(document).ready(function(){
+$(".but").click(function(){
+  $('.slide-show').toggleClass("start");
+});
+});
+
+$(function(){
+$(".b1").click(function(){
+  $('.ok').addClass("appear");
+  $('.slide-show, .f2, .futter').addClass("blur");
+});
+});
+$(function(){
+$(".b2").click(function(){
+  $('.ok').removeClass("appear");
+  $('.slide-show, .f2, .futter').removeClass("blur");
+});
+});
+function CreditCard(elem){
+    var m = elem.value.length+1;
+
+    if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
+    event.returnValue= false;
+
+    else if (m == 5 || m == 10 || m == 15)
+    elem.value += ' ';
+}
+$("input").datepicker({
+    dateFormat: 'mm-dd-yyyy',
+    beforeShowDay: enableAllTheseDays
+  });
+
+var enabledDays = ['2-1-2022', '6-7-2022', '8-21-2022', '10-10-2022']
+
+function enableAllTheseDays(date) {
+     var cd = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear();
+     return [ $.inArray(cd, enabledDays) != -1 ]
+}
+</script>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-items">
+      <a class="logo"  id="input_button_bg_change" href="index.html"</a>
+      <a  class="sob"  id="text" href="events.html">События</a>
+      <a class="map" id="text"  href="map.html">Карта</a>
+      <a  class="affest" id="text" href="affest.html">Affest</a>
+      <a  class="shop" id="text" href="shop.html">Магазин</a>
+      <a class="we" id="text"  href="about.html">О нас</a>
+    </div>
+  </div>
+  <div class="slide-show">
+    <div class="titul"></div>
+    <div class="but"></div>
+  </div>
+  <div class="f2">
+    <div class="about">
+      <h2>Affest  — вечерний<br>фестиваль ярмарки Afkraft<br>с костюмированным<br>шоу и выступлением<br>Симона Элейна.</h2>
+      <a href="about.html">Подробнее</a>
+    </div>
+    <div class="form">
+      <h2>Купить билет</h2>
+      <input id="big" class="i1" type="text" name="" value="" placeholder="Ваше имя">
+      <select id="big" class="i2" name="" placeholder="Вид билета">
+        <option value="">Стандарт</option>
+        <option value="">Премиум</option>
+      </select>
+      <input id="small" class="i3" type="number" name="" placeholder="Количество" min="1" max="20">
+      </select>
+      <input id="small" class="i4" type="date" name="date" value="">
+      <input id="big" class="i5" onKeyPress="CreditCard(this)" type="text" name="" value="" placeholder="Номер карты">
+      <button class="b1" id="small" type="button" name="button">купить</button>
+      <div class="inf"><a>Билет также можно приобрести<br>в кассах на территории ярмарки</a></div>
+    </div>
+  </div>
+  <div class="futter">
+    <a  class="contacts"  id="text">Контакты<br>+7-(191)-955-93-82</a>
+    <a class="support" id="text"  href="#">Тех. поддержка</a>
+    <a  class="sotrud" id="text" href="#">Сотрудничество</a>
+    <a  class="me" id="text">designed by<br>Tatiana Prokina</a>
+    <a class="hse"></a>
+  </div>
+  <div class="ok">
+    <p>Заказ оформлен</p>
+    <button class="b2">ок</button>
+  </div>
+</body>
+</html>

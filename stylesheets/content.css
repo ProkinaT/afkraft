@@ -1,0 +1,84 @@
+/* МЕНЮ */
+.menu {
+  display: block;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  background-color: #252525;
+  position: fixed;
+  z-index: 900;
+}
+.menu-items {
+  display: flex;
+  padding-top: 22px;
+}
+.logo {
+  width: 36px;
+  height: 39px;
+  background: url('../images/logow.svg');
+  background-repeat: no-repeat;
+  margin-top: -9px;
+  margin-left: 5.2vw;
+}
+.sob{
+  margin-left: 12.5vw;
+}
+.map {
+  margin-left: 9vw;
+}
+.affest{
+  margin-left: 12.1vw;
+}
+.shop {
+  margin-left: 11.2vw;
+}
+.we {
+  margin-left: 10.4vw;
+}
+.menu-items a {
+  color: white;
+  text-decoration: none;
+}
+.menu-items #text:hover {
+  background-color: #D67C0F;
+  color: black;
+}
+/* МЕНЮ */
+/* ФУТТЕР */
+.futter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 94px;
+  background-color: #252525;
+  padding-top: 16px;
+}
+.futter a{
+  color: white;
+  text-decoration: none;
+}
+.futter a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.contacts {
+  margin-left: 4.7vw;
+}
+.support {
+  margin-left: 3vw;
+}
+.sotrud {
+  margin-left: 5vw;
+}
+.me {
+margin-left: 20vw;
+}
+.hse {
+  background-image: url('../images/hse.svg');
+  width: 124px;
+  height: 51px;
+  margin-left: 5.3vw;
+}
+/* ФУТТЕР */

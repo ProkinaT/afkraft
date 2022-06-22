@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/i.ico" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <title>About Afkraft</title>
+  <style>
+  body:{
+  position: absolute;
+  background-color: white;
+  width: 1440px;
+  height: 6300px;
+  overflow: hidden;
+}
+#frame {
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+h1 {
+  line-height: 50px;
+}
+/* ЗЕЛЕНЫЙ ФРЭЙМ */
+.f1 {
+  background: #7A8215;
+}
+.afkr {
+  position: relative;
+  top: 131px;
+  left: -80vw;
+  width: 925px;
+  height: 196px;
+  background-image: url('images/AFKRAFT.svg');
+  animation: afkr 3s forwards;
+  animation-delay: 1.5s;
+}
+.zigzag {
+  position: relative;
+  width: 296px;
+  height: 42px;
+  top: 76px;
+  left: -75vw;
+  background-image: url('images/zigzag.svg');
+  transform: scale(2);
+  animation: zigzag 3s forwards;
+  animation-delay: 1s;
+}
+.tbig {
+  position: relative;
+  width: 410px;
+  height: 238px;
+  top: -37px;
+  left: 105vw;
+  background-image: url('images/triangles.svg');
+  animation: tbig 3s forwards;
+  animation-delay: 3s;
+}
+.zigzag1 {
+  display: none;
+}
+.afrika {
+  position: relative;
+   top: 146px;
+   left: 105vw;
+   width: 952px;
+   height: 196px;
+  background-image: url('images/АФРИКА.svg');
+  animation: afrika 3s forwards;
+  animation-delay: 3.5s;
+}
+.yze {
+  display: none;
+}
+.ryadom {
+  position: relative;
+  top: -57px;
+  left: -100vw;
+  width: 1601px;
+  height: 272px;
+  background-repeat: no-repeat;
+  background-image: url('images/УЖЕ РЯДОМ.svg');
+  animation: ryadom 3s forwards;
+  animation-delay: 4.3s;
+}
+/* ФРЭЙМ2 */
+.module2 {
+  position: relative;
+  width: 100%;
+  top: 0;
+  height: 225px;
+  background-image: url('images/wb2.png');
+  transition: 1s;
+}
+.module2:hover {
+  filter: blur(2px);
+  cursor: pointer;
+}
+
+.f2 h2 {
+  position: relative;
+  top: -38px;
+  left: 3vw;
+}
+.f2 p {
+  position: relative;
+  top: 12px;
+  width: 29.6vw;
+}
+.module2 h2 {
+  position: relative;
+  font-size: 60px;
+  color: white;
+  top: -185px;
+  left: 4.5vw;
+  z-index: 3;
+}
+.module2 p {
+  position: relative;
+  top: -164px;
+  color: white;
+  width: 29vw;
+  left: 4.5vw;
+  z-index: 3;
+}
+.module2 a {
+  display: block;
+  height: 100%;
+}
+.more {
+  display: flex;
+  width: 100%;
+  height: 679px;
+}
+.yarmarka, .simon, .afkitchen {
+  position: relative;
+  top: 20px;
+  width: 30%;
+  height: 655px;
+}
+.yarmarka {
+  left: 4.3vw;
+}
+.simon {
+  left: 5.1vw;
+}
+.afkitchen {
+  left: 6vw;
+}
+.t {
+  position: relative;
+  width: 51px;
+  height: 47px;
+  background-image: url('images/triangle.svg');
+  transform: rotate(180deg) scale(0.8);
+}
+
+.simon h2 {
+  left: 3.3vw;
+}
+.afkitchen h2 {
+  left: 3.3vw;
+}
+#smallph {
+  display: block;
+  position: relative;
+  left: 0.2vw;
+  width: 29.6vw;
+  height: 386px;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+.yarmi {
+  top: 71px;
+  background-image: url('images/p1.png');
+}
+.affesti {
+  top: 71px;
+  background-image: url('images/p2.png');
+}
+.afkitcheni {
+  top: 71px;
+  background-image: url('images/p3.png');
+}
+/* ЗОНЫ*/
+.inf {
+  display: flex;
+}
+.txt {
+  position: relative;
+  top: 62px;
+  left: 4.4vw;
+  height: 838px;
+  width: 30vw;
+}
+.txt p {
+  position: relative;
+  top: 53px;
+}
+#bigph {
+  position: relative;
+  top: 66px;
+  left: 5.2vw;
+  margin-right: 0;
+  width: 60.6vw;
+  height: 834px;
+  background-repeat: no-repeat;
+}
+.circles {
+  position: relative;
+  display: flex;
+  width: 66px;
+  height: 22px;
+  left: 28vw;
+  top: 798px;
+  justify-content: space-between;
+}
+ .c1, .c2, .c3 {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.5;
+}
+.wh {
+  opacity:1;
+}
+.bigph2 {
+  background-image: url('images/f21.png');
+}
+.bigph3 {
+  background-image: url('images/f31.png');
+}
+.bigph4 {
+  background-image: url('images/f41.png');
+}
+.bigph5 {
+  background-image: url('images/f51.png');
+}
+.f11 {
+  background-image: url('images/f11.png');
+  transition: 1s;
+}
+.f12 {
+  background-image: url('images/f12.png');
+  transition: 1s;
+}
+.f13 {
+  background-image: url('images/f13.png');
+  transition: 1s;
+}
+.f21 {
+  background-image: url('images/f21.png');
+  transition: 1s;
+}
+.f22 {
+  background-image: url('images/f22.png');
+  transition: 1s;
+}
+.f23 {
+  background-image: url('images/f23.png');
+  transition: 1s;
+}
+.f31 {
+  background-image: url('images/f31.png');
+  transition: 1s;
+}
+.f32 {
+  background-image: url('images/f32.png');
+  transition: 1s;
+}
+.f33 {
+  background-image: url('images/f33.png');
+  transition: 1s;
+}
+.f41 {
+  background-image: url('images/f41.png');
+  transition: 1s;
+}
+.f42 {
+  background-image: url('images/f42.png');
+  transition: 1s;
+}
+.f43 {
+  background-image: url('images/f43.png');
+  transition: 1s;
+}
+.f51 {
+  background-image: url('images/f51.png');
+  transition: 1s;
+}
+.f52 {
+  background-image: url('images/f52.png');
+  transition: 1s;
+}
+.f53 {
+  background-image: url('images/f53.png');
+  transition: 1s;
+}
+/* СТИКЕРЫ */
+.kon {
+  position: relative;
+  top: -321px;
+  left: 3vw;
+  height: 408px;
+  width: 432px;
+  background-image: url('images/drkongo.svg');
+}
+.uar {
+  position: relative;
+  top: -225px;
+  left: 4.8vw;
+  height: 277px;
+  width: 514px;
+  background-image: url('images/druar.svg');
+}
+.zam {
+  position: relative;
+  top: -353px;
+  left: 10.8vw;
+  height: 433px;
+  width: 426px;
+  background-image: url('images/drzambia.svg');
+}
+.ken {
+  position: relative;
+  top: -321px;
+  left: 8.8vw;
+  height: 369px;
+  width: 457px;
+  background-image: url('images/drkenia.svg');
+}
+.mar {
+  position: relative;
+  top: -269px;
+  left: 4.8vw;
+  height: 344px;
+  width: 485px;
+  transform: scaleY(1.2);
+  background-image: url('images/drmarokko.svg');
+}
+.futter {
+  bottom: 0;
+  position: relative;
+}
+@keyframes afkr {
+  0% {left:-80vw;}
+  100% {left: 0vw;}
+}
+@keyframes zigzag {
+  0% {left:-75vw;}
+  100% {left: 75vw;}
+}
+@keyframes tbig {
+  0% {left: 105vw;}
+  100% {left: 0vw;}
+}
+@keyframes afrika {
+  0% {left: 105vw;}
+  100% {left: 30vw;}
+}
+@keyframes ryadom {
+  0% {left: -100vw;}
+  100% {left: 0vw;}
+}
+  </style>
+  <link rel="stylesheet" href="stylesheets/responsive_about.css">
+  <script>
+  $(document).ready(function(){
+    $(".bigph1").click(function(){
+      if ($(this).hasClass("f11")){
+        $(this).addClass("f12");
+        $(".fkon2").addClass("wh");
+        setTimeout(function(){
+          $(".bigph1").removeClass("f11");
+          $(".fkon1").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph1").hasClass("f12")){
+        $(this).addClass("f13");
+        $(".fkon3").addClass("wh");
+        setTimeout(function(){
+          $(".bigph1").removeClass("f12");
+          $(".fkon2").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph1").hasClass("f13")){
+        $(this).addClass("f11");
+        $(".fkon1").addClass("wh");
+        setTimeout(function(){
+          $(".bigph1").removeClass("f13");
+          $(".fkon3").removeClass("wh");
+      }, 100);
+      };
+    });
+  });
+  $(function(){
+    $(".bigph2").click(function(){
+      if ($(this).hasClass("f21")){
+        $(this).addClass("f22");
+        $(".fu2").addClass("wh");
+        setTimeout(function(){
+          $(".bigph2").removeClass("f21");
+          $(".fu1").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph2").hasClass("f22")){
+        $(this).addClass("f23");
+        $(".fu3").addClass("wh");
+        setTimeout(function(){
+          $(".bigph2").removeClass("f22");
+          $(".fu2").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph2").hasClass("f23")){
+        $(this).addClass("f21");
+        $(".fu1").addClass("wh");
+        setTimeout(function(){
+          $(".bigph2").removeClass("f23");
+          $(".fu3").removeClass("wh");
+      }, 100);
+      };
+    });
+  });
+  $(function(){
+    $(".bigph3").click(function(){
+      if ($(this).hasClass("f31")){
+        $(this).addClass("f32");
+        $(".fz2").addClass("wh");
+        setTimeout(function(){
+          $(".bigph3").removeClass("f31");
+          $(".fz1").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph3").hasClass("f32")){
+        $(this).addClass("f33");
+        $(".fz3").addClass("wh");
+        setTimeout(function(){
+          $(".bigph3").removeClass("f32");
+          $(".fz2").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph3").hasClass("f33")){
+        $(this).addClass("f31");
+        $(".fz1").addClass("wh");
+        setTimeout(function(){
+          $(".bigph3").removeClass("f33");
+          $(".fz3").removeClass("wh");
+      }, 100);
+      };
+    });
+  });
+  $(function(){
+    $(".bigph4").click(function(){
+      if ($(this).hasClass("f41")){
+        $(this).addClass("f42");
+        $(".fken2").addClass("wh");
+        setTimeout(function(){
+          $(".bigph4").removeClass("f41");
+          $(".fken1").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph4").hasClass("f42")){
+        $(this).addClass("f43");
+        $(".fken3").addClass("wh");
+        setTimeout(function(){
+          $(".bigph4").removeClass("f42");
+          $(".fken2").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph4").hasClass("f43")){
+        $(this).addClass("f41");
+        $(".fken1").addClass("wh");
+        setTimeout(function(){
+          $(".bigph4").removeClass("f43");
+          $(".fken3").removeClass("wh");
+      }, 100);
+      };
+    });
+  });
+  $(function(){
+    $(".bigph5").click(function(){
+      if ($(this).hasClass("f51")){
+        $(this).addClass("f52");
+        $(".fm2").addClass("wh");
+        setTimeout(function(){
+          $(".bigph5").removeClass("f51");
+          $(".fm1").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph5").hasClass("f52")){
+        $(this).addClass("f53");
+        $(".fm3").addClass("wh");
+        setTimeout(function(){
+          $(".bigph5").removeClass("f52");
+          $(".fm2").removeClass("wh");
+      }, 100);
+    } else if ( $(".bigph5").hasClass("f53")){
+        $(this).addClass("f51");
+        $(".fm1").addClass("wh");
+        setTimeout(function(){
+          $(".bigph5").removeClass("f53");
+          $(".fm3").removeClass("wh");
+      }, 100);
+      };
+    });
+  });
+  $(function() {
+  $('.kon, .uar, .zam, .ken, .mar').draggable();
+  });
+  </script>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-items">
+      <a class="logo"  id="input_button_bg_change" href="index.html"</a>
+      <a  class="sob"  id="text" href="events.html">События</a>
+      <a class="map" id="text"  href="map.html">Карта</a>
+      <a  class="affest" id="text" href="affest.html">Affest</a>
+      <a  class="shop" id="text" href="shop.html">Магазин</a>
+      <a class="we" id="text"  href="about.html">О нас</a>
+    </div>
+  </div>
+  <div  id="frame" class="f1">
+    <div class="afkr"></div>
+    <div class="zigzag"></div>
+    <div class="afrika"></div>
+    <div class="tbig"></div>
+    <div class="yze"></div>
+    <div class="zigzag1"></div>
+    <div class="ryadom"></div>
+  </div>
+  <div  id="frame" class="f2">
+    <div class="module2">
+      <a href="https://prokinat.github.io/web-poster/"></a>
+      <h2>Мы  — Afkraft</h2>
+      <p>Afkraft — ярмарка африканской продукци, которая погрузит вас в атмосферу красочного праздника, подарив вам день в&nbspшумной африканской деревне.</p>
+    </div>
+    <div class="more">
+      <div class="yarmarka">
+        <div class="t"></div>
+        <h2>О ярмарке</h2>
+        <p>Приобретите уникальную афркианскую продукцию на нашей ярмарке. Все пред — меты и вещи выполенны вручную и попадают на ярмарку от&nbspафриканских&nbspмастеров.</p>
+        <div id="smallph" class="yarmi"></div>
+      </div>
+      <div class="simon">
+        <div class="t"></div>
+        <h2>Affest</h2>
+        <p>Affest — яркий фестиваль ярмарки Afkraft. Здесь каждый сможет побывать в&nbspэпицентре шумного африканского праздника. Вас ждёт костюмированное шоу, уникальное звучание африканских барабанов и вечерний костёр.</p>
+        <div id="smallph" class="affesti"></div>
+      </div>
+      <div class="afkitchen">
+        <div class="t"></div>
+        <h2>Afkraft Kitchen</h2>
+        <p>Мастер-классы от нашего шеф-повара помогут вам узнать больше о традиционных и современных блюдах народов Афики, которыми вы сможете удивить дже самых притязательных гостей</p>
+        <div id="smallph" class="afkitcheni"></div>
+      </div>
+      </div>
+    </div>
+
+  <div  id="frame" class="f3">
+    <div class="inf">
+      <div class="txt">
+        <h1>ярмарка<br>зона 1. конго</h1>
+        <p>Самая первая зона  ярмарки Афкрафт — Конго. Здесь пердставлены три торговые галереи, в которых вы можете найти товары по трем основным категориям: текстиль (1ая галерея), керамическая продукция (2ая галерея), маски и магические предметы (открытая галерея). Все представленные товары уникальны и поставляются напрямую от африканских мастеров.  </p>
+      </div>
+      <div id="bigph" class="bigph1 f11">
+        <div class="circles">
+          <div  class="c1 fkon1"></div>
+          <div class="fkon2 c2"></div>
+          <div class=" fkon3 c3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="kon"></div>
+    </div>
+  <div id="frame"  class="f4">
+    <div class="inf">
+      <div class="txt">
+        <h1>воркшопы.<br>юар</h1>
+        <p>Следующая зона ярмарки носит название ЮАР — пространство, где проводятся воркшопы. Три здания для трех основных направлений обучения: работа с модель —ером над пошивом юбок, создание африканских масок и искусство керамики.<br>На воркшопах вы не только научитесь понимать основные принципы работы с&nbspматериалами, но и  узнаете о применении африканского искусства в&nbspсовременном&nbspдизайне. </p>
+      </div>
+      <div id="bigph" class="bigph2 f21">
+        <div class="circles">
+          <div class=" fu1 c1"></div>
+          <div class=" fu2 c2"></div>
+          <div class="fu3 c3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="uar"></div>
+  </div>
+<div id="frame"  class="f5">
+  <div class="inf">
+    <div class="txt">
+      <h1>замбия.<br>фудкорт</h1>
+      <p>Замбия — отличное место, чтобы&nbspперекусить&nbspна&nbspярмарке. Вас ожидают традиционные и современные блюда разных&nbspрегионов Африки, созданные по рецепту нашего шеф-повара. Здесь вас встретят прохладные тени пальм и большое количество посадочных мест, чтобы вам никогда не пришлось ожидать свой столик. Бунгала в зоне Замбии предложат не только основные блюда, но также десерты и настоящий африканский&nbspкофе.</p>
+    </div>
+    <div id="bigph" class="bigph3 f31">
+      <div class="circles">
+        <div class="fz1 c1"></div>
+        <div class=" fz2 c2"></div>
+        <div class=" fz3 c3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="zam"></div>
+</div>
+  <div id="frame"  class="f6">
+    <div class="inf">
+      <div class="txt">
+        <h1>кения.<br>зона отдыха</h1>
+        <p>Пройдя половину пути по ярмарке, хочется остановиться и отдохнуть. На этот случай Afkraft подготовил для вас специальную зону среди широко раскинувшихся пальм и эк — зотических растений. Маленькие гости найдут себе развлечение в виде интересной<br>и безопасной десткой площадки — большое сооружение в виде головы одних из героев ярмарки наполнено переходами, упорами для скалолазания и лестницами — с такой площадкой можно выдумать любую вселенную для игры.</p>
+      </div>
+      <div id="bigph" class="bigph4 f41">
+        <div class="circles">
+          <div class="fken1 c1"></div>
+          <div class="fken2 c2"></div>
+          <div class="fken3 c3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ken"></div>
+  </div>
+  </div>
+  <div id="frame"  class="f7">
+    <div class="inf">
+      <div class="txt">
+        <h1>марокко.<br>фестиваль</h1>
+        <p>В конце незабываемого дня<br>с ярмаркой Afkraft вас ждёт яркий фестиваль Affest. На сцене, выполненной в виде огромного кострища, вы сможете наблюдать&nbspшоу с использованием традиционных африканских костюмов, а&nbspтакже услышать уникальное звучание джембе&nbsp(африканских&nbspбарабанов)<br>в исполнении хэдера фестиваля — Симона&nbspЭлейна.</p>
+      </div>
+      <div id="bigph" class="bigph5 f51">
+        <div class="circles">
+          <div class="fm1 c1"></div>
+          <div class="fm2 c2"></div>
+          <div class="fm3 c3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mar"></div>
+  </div>
+    <div class="futter">
+      <a  class="contacts"  id="text">Контакты<br>+7-(191)-955-93-82</a>
+      <a class="support" id="text"  href="#">Тех. поддержка</a>
+      <a  class="sotrud" id="text" href="#">Сотрудничество</a>
+      <a  class="me" id="text">designed by<br>Tatiana Prokina</a>
+      <a class="hse"></a>
+    </div>
+  </div>
+
+</body>
+</html>

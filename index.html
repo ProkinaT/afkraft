@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/i.ico" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Afkraft</title>
+  <style media="screen">
+    body {
+      position: absolute;
+      background-color: #D67C0F;
+      opacity: 1;
+      width: 1440px;
+      height: 900px;
+    }
+    .f1 {
+      position: absolute;
+      top: 45px;
+      left:0;
+      width: 1440px;
+      height: 855px;
+      overflow-x: hidden;
+    }
+    /* МЕНЮ */
+    .menu-items {
+      display: flex;
+      padding-top: 22px;
+    }
+    .logo {
+      width: 36px;
+      height: 39px;
+      background: url('images/logob.svg');
+      background-repeat: no-repeat;
+      margin-top: -9px;
+      margin-left: 5.2vw;
+    }
+    .menu-items a {
+      color: black;
+    }
+    .menu-items #text:hover {
+      color: white;
+      background-color: black;
+    }
+    /* АФКРАФТ */
+    .a {
+      position: relative;
+      width: 124px;
+      height: 407px;
+      top: 28px;
+      left: 65px;
+      background-image: url("./images/AF KRAFT.svg");
+    }
+    .f {
+      position: relative;
+      width: 1243px;
+      height: 407px;
+      top: -378px;
+      left: 131px;
+      animation: jamk 3s forwards;
+      animation-delay: 1s;
+      background-image: url("./images/f.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      overflow: hidden;
+    }
+    .yar {
+      position: relative;
+      width: 1000px;
+      height: 407px;
+      top: -787px;
+      left: 130vw;
+      animation: move 3s forwards;
+      animation-delay: 1s;
+      background-image: url("./images/move.svg");
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    .kraft {
+      display: block;
+      position: relative;
+      background-image: url("./images/kraft.svg");
+      top: -773px;
+      left: 66px;
+      height: 386px;
+      width: 1308px;
+    }
+    @keyframes jamk {
+      0% {transform: scaleX(1); height: 407px;}
+      100% {transform: scaleX(0.28); height: 407px; left: -22vw;}
+    }
+
+    @keyframes move {
+      0% {left:130vw;}
+      100% {left: 36vw;}
+    }
+  </style>
+  <link rel="stylesheet" href="stylesheets/responsive.css">
+  <script>
+  window.onload = function() {
+  var button = document.getElementById('input_button_bg_change');
+  var body = document.getElementsByTagName('body')[0];
+  var colors = ['#00477F', '#BB1623', '#7A8215', '#FF2E10', '#D67C0F'];
+  button.onclick = function() {
+      body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  };
+};
+  </script>
+</head>
+<body>
+<div class="f1">
+  <div class="a"></div>
+  <div class="f"></div>
+  <div class="yar"></div>
+  <div class="kraft"></div>
+</div>
+<div class="menu-items">
+  <a class="logo"  id="input_button_bg_change"</a>
+  <a  class="sob"  id="text" href="events.html">События</a>
+  <a class="map" id="text"  href="map.html">Карта</a>
+  <a  class="affest" id="text" href="affest.html">Affest</a>
+  <a  class="shop" id="text" href="shop.html">Магазин</a>
+  <a class="we" id="text"  href="about.html">О нас</a>
+</div>
+</div>
+</body>
+</html>

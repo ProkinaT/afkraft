@@ -1,0 +1,15 @@
+h1 {
+  font-family: "Zyablik";
+  font-size: 60px;
+  line-height: 60px;
+}
+h2 {
+  font-family: "Pragmaticam";
+  font-size: 30px;
+  line-height: 35px;
+}
+p, a {
+  font-family: "Pragmatical";
+  font-size: 20px;
+  line-height: 23px;
+}

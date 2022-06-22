@@ -1,0 +1,53 @@
+
+body {
+  position: absolute;
+  background-color: black;
+  opacity: 0.7;
+  width: 1440px;
+  height: 900px;
+  overflow: hidden;
+}
+.str {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 900px;
+  overflow: hidden;
+}
+h1, p {
+  position: relative;
+  color: white;
+}
+h1 {
+  font-size: 120px;
+  line-height: 140px;
+}
+body h1:first-of-type{
+  top: 69px;
+  text-align: center;
+}
+body h1:nth-of-type(2) {
+  top: 134px;
+  left: 42.3vw;
+}
+.rhead {
+  position: relative;
+  width: 467px;
+  height: 549px;
+  top: -165px;
+  left: 0;
+  background-image: url("../images/rhead.png");
+}
+.ghead {
+  position: relative;
+  width: 513px;
+  height: 522px;
+  top: -684px;
+  left: 58vw;
+  background-image: url("../images/ghead.png");
+}
+ p {
+  top: -685px;
+  left: 40.6vw;
+}

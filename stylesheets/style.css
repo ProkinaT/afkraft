@@ -1,0 +1,15 @@
+@import 'reset.css';
+@import 'content.css';
+@import 'layout.css';
+@font-face {
+   font-family: "Zyablik";
+   src: url(../fonts/Zyablik-Regular.ttf) format("truetype");
+  }
+ @font-face {
+   font-family: "Pragmaticam";
+   src: url(../fonts/Pragmatica-Medium.ttf) format("truetype");
+  }
+@font-face {
+    font-family: "Pragmatical";
+    src: url(../fonts/Pragmatica-Light.ttf) format("truetype");
+  }

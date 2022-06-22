@@ -1,0 +1,222 @@
+/* pc 1440*900 */
+@media all and (min-device-width: 1367px) {
+ body { width: 1440px; height: 900px;}
+}
+/* tablet 768*1024 */
+@media all  and (min-device-width: 415px) and (max-device-width: 768px){
+ body {width: 768px; height: 1024px; overflow: hidden;}
+ .f1 {
+  width: 768px;
+  height: 1024px;
+  overflow: hidden;
+}
+ .sob {
+  margin-left: 4.5vw;
+ }
+ .we {
+  margin-left: 7.4vw;
+ }
+ h1 {
+   display: none;
+ }
+
+ .afmap {
+   top: 125px;
+   left: 12vw;
+ }
+ .plus {
+   top: 70px;
+   left: 3vw;
+ }
+ .kongo {
+   top: -320px;
+   left: 40vw;
+ }
+ .uar {
+   top: -943px;
+   left: 57vw;
+ }
+ .zambia {
+   top: -1294px;
+   left: 34vw;
+ }
+ .kenia {
+   top: -1500px;
+   left: 15vw;
+ }
+ .marokko {
+   top: -1606px;
+   left: 35vw;
+ }
+ .konw {
+   top: 421px;
+   left: 249px;
+ }
+ .konh {
+  left: 331px;
+ }
+ .uw {
+  top: 109px;
+  left: 387px;
+ }
+ .uh {
+   top: 258px;
+   left: 472px;
+ }
+ .zw {
+  top: 84px;
+  left: 224px;
+ }
+ .zh {
+   top: 110px;
+   left: 407px;
+ }
+ .kenw {
+   top: 67px;
+   left: 86px;
+ }
+ .kenh {
+   top: 114px;
+   left: 161px;
+ }
+ .mw {
+   top: 235px;
+   left: 215px;
+ }
+ .mh {
+   top: 398px;
+   left: 284px;
+ }
+ .futter {
+   top: 203px;
+   background: transparent;
+ }
+ .me {
+   margin-left: 5vw;
+ }
+ .sotrud {
+  display: none;
+ }
+ .support {
+    margin-left: 8vw;
+}
+}
+/* iphone 414*896*/
+@media all and (min-device-width: 361px) and (max-device-width: 414px){
+ body {
+  width: 414px;
+  height: 896px;
+  overflow: hidden;
+}
+.frame1{
+  width: 414px;
+  height: 896px;
+  overflow: hidden;
+}
+.menu {
+  height: 104px;
+}
+.affest, .shop, .we {
+  position: relative;
+  top: 37px;
+  margin-left: 9vw;
+}
+.sob {
+  margin-left: 15.5vw;
+}
+.map {
+  margin-left: 16vw;
+}
+.affest {
+ margin-left: -73vw;
+}
+.shop {
+ margin-left: 13vw;
+}
+.we {
+ margin-left: 16vw;
+}
+h1 {
+  display: none;
+}
+.afmap, .plus, .kongo, .uar, .zambia, .kenia, .marokko {
+  transform: scale(0.7);
+}
+.afmap {
+  top: 100px;
+  left: -17vw;
+}
+.plus {
+  top: 100px;
+  left: -25vw;
+}
+.kongo {
+  top: -397px;
+  left: 31vw;
+}
+.uar {
+  top: -927px;
+  left: 56vw;
+}
+.zambia {
+  top: -1255px;
+  left: 24vw;
+}
+.kenia {
+  top: -1455px;
+  left: 2vw;
+}
+.marokko {
+  top: -1610px;
+  left: 22vw;
+}
+.konw {
+top: 350px;
+left: 201px;
+}
+.konh {
+ left: 272px;
+}
+.uw {
+top: 39px;
+left: 341px;
+}
+.uh {
+  top: 308px;
+  left: 345px;
+}
+.zw {
+  top: 9px;
+  left: 175px;
+}
+.zh {
+  top: 78px;
+  left: 353px;
+}
+.kenw {
+  top: -10px;
+  left: 43px;
+}
+.kenh {
+  top: 50px;
+  left: 91px;
+}
+.mw {
+top: 175px;
+left: 166px;
+}
+.mh {
+  top: 366px;
+  left: 245px;
+}
+.futter {
+  top: 68px;
+  background: transparent;
+}
+ .contacts, .support, .sotrud {
+   display: none;
+ }
+ .me {
+   margin-left: 5vw;
+ }
+}

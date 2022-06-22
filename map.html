@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/i.ico" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Afkraft.Карта</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<style>
+body {
+  width: 1440px;
+  height: 900px;
+  opacity: 1;
+  position: absolute;
+  background: black;
+  overflow-x: hidden;
+}
+/* МЕНЮ */
+.menu {
+  display: block;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  background-color: black;
+  position: fixed;
+  z-index: 900;
+}
+/* МЕНЮ */
+.frame1 {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 1440px;
+  height: 900px;
+
+}
+/* КАРТА */
+.afmap {
+position: relative;
+display: block;
+top: 62px;
+left: 50vw;
+width: 569px;
+height: 734px;
+background-image: url('images/map.png');
+background-repeat: no-repeat;
+background-size: 569px 734px;
+}
+h1 {
+  position: relative;
+  display: block;
+  top: -431px;
+  left: 5vw;
+  color: white;
+}
+/* ФУТТЕР */
+.futter {
+  position: relative;
+  display: flex;
+  background: transparent;
+  width: 100%;
+  top: -80px;
+}
+/* АНИМАЦИЯ КАРТЫ */
+.plus {
+  position: absolute;
+  width: 720px;
+  height: 800px;
+  top: 0px;
+  left: 43vw;
+
+}
+.kongo {
+  position: relative;
+  width: 240px;
+  height: 297px;
+  top: -500px;
+  left: 65vw;
+}
+.uar {
+  position: relative;
+  width: 171px;
+  height: 329px;
+  top: -1128px;
+  left: 74vw;
+}
+.zambia {
+  position: relative;
+  width: 262px;
+  height: 162px;
+  top: -1482px;
+  left: 62vw;
+}
+.kenia {
+  position: relative;
+  width: 178px;
+  height: 300px;
+  top: -1673px;
+  left: 52vw;
+}
+.marokko {
+  position: relative;
+  width: 202px;
+  height: 200px;
+  top: -1787px;
+  left: 62vw;
+}
+.konw {
+  position: absolute;
+  top: 425px;
+  left: 283px;
+  width: 307px;
+  height:363px;
+  background-image: url('images/kongow.svg');
+  background-repeat: no-repeat;
+}
+.uw {
+  position: absolute;
+  top: 116px;
+  left: 422px;
+  width: 218px;
+  height:360px;
+  background-image: url('images/uarw.svg');
+  background-repeat: no-repeat;
+}
+.zw {
+  position: absolute;
+  top: 90px;
+  left: 258px;
+  width: 296px;
+  height: 237px;
+  background-image: url('images/zambiaw.svg');
+  background-repeat: no-repeat;
+}
+.kenw {
+  position: absolute;
+  top: 70px;
+  left: 122px;
+  width: 187px;
+  height: 300px;
+  background-image: url('images/keniaw.svg');
+  background-repeat: no-repeat;
+}
+.mw {
+  position: absolute;
+  top: 248px;
+  left: 242px;
+  width: 232px;
+  height: 263px;
+  background-image: url('images/marokkow.svg');
+  background-repeat: no-repeat;
+}
+.konh {
+  position: absolute;
+  top: 645px;
+  left: 410px;
+  width: 255px;
+  height: 164px;
+  background-image: url('images/конго.svg');
+  background-repeat: no-repeat;
+}
+.uh{
+  position: absolute;
+  top: 232px;
+  left: 552px;
+  width: 255px;
+  height: 188px;
+  background-image: url('images/uar.svg');
+  background-repeat: no-repeat;
+}
+.zh {
+  position: absolute;
+  top: 145px;
+  left: 437px;
+  width: 250px;
+  height: 169px;
+  background-image: url('images/zambia.svg');
+  background-repeat: no-repeat;
+}
+.kenh {
+  position: absolute;
+  top: 126px;
+  left: 178px;
+  width: 418.07px;
+  height: 348px;
+  background-image: url('images/kenia.svg');
+  background-repeat: no-repeat;
+}
+.mh {
+  position: absolute;
+  top: 379px;
+  left: 312px;
+  width: 255px;
+  height: 256px;
+  background-image: url('images/marokko.svg');
+  background-repeat: no-repeat;
+}
+/* АНИМАЦИЯ КАРТЫ */
+</style>
+<link rel="stylesheet" href="stylesheets/responsive_map.css">
+<script>
+  $(document).ready(function(){
+	$(".kongo").click(function(){
+		$('.1').toggleClass("konh");
+    $('.11').toggleClass("konw");
+	});
+});
+$(function(){
+$(".uar").click(function(){
+  $('.2').toggleClass("uh");
+  $('.22').toggleClass("uw");
+});
+});
+$(function(){
+$(".zambia").click(function(){
+  $('.3').toggleClass("zh");
+  $('.33').toggleClass("zw");
+});
+});
+$(function(){
+$(".kenia").click(function(){
+  $('.4').toggleClass("kenh");
+  $('.44').toggleClass("kenw");
+});
+});
+$(function(){
+$(".marokko").click(function(){
+  $('.5').toggleClass("mh");
+  $('.55').toggleClass("mw");
+});
+});
+</script>
+<body>
+  <div class="menu">
+    <div class="menu-items">
+      <a class="logo"  id="input_button_bg_change" href="index.html"</a>
+      <a  class="sob"  id="text" href="events.html">События</a>
+      <a class="map" id="text"  href="map.html">Карта</a>
+      <a  class="affest" id="text" href="affest.html">Affest</a>
+      <a  class="shop" id="text" href="shop.html">Магазин</a>
+      <a class="we" id="text"  href="about.html">О нас</a>
+    </div>
+  </div>
+  <div class="frame1">
+    <div class="afmap"></div>
+    <h1>не заплутай<br>в африканских<br>джунглях</h1>
+    <div class="futter">
+      <a  class="contacts"  id="text">Контакты<br>+7-(191)-955-93-82</a>
+      <a class="support" id="text"  href="#">Тех. поддержка</a>
+      <a  class="sotrud" id="text" href="#">Сотрудничество</a>
+      <a  class="me" id="text">designed by<br>Tatiana Prokina</a>
+      <a class="hse"></a>
+    </div>
+    <!-- АНИМАЦИЯ КАРТЫ -->
+    <div class="plus">
+      <div class="11"></div>
+      <div class="22"></div>
+      <div class="33"></div>
+      <div class="44"></div>
+      <div class="55"></div>
+      <div class="1"></div>
+      <div class="2"></div>
+      <div class="3"></div>
+      <div class="4"></div>
+      <div class="5"></div>
+    </div>
+    <!-- АНИМАУ=ЦИЯ КАРТЫ -->
+    <div class="kongo"></div>
+    <div class="uar"></div>
+    <div class="zambia"></div>
+    <div class="kenia"></div>
+    <div class="marokko"></div>
+  </div>
+</body>
+</html>

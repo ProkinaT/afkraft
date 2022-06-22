@@ -1,0 +1,232 @@
+
+/* pc 1440*900 */
+@media all and (min-device-width: 1367px) {
+ body { width: 1440px; height: 1800px;}
+}
+/* tablet 768*1024 */
+@media all  and (min-device-width: 415px) and (max-device-width: 768px){
+ body {width: 768px; height: 2048px; overflow: hidden;}
+ .f1, .f2 {
+   width: 768px;
+  height: 595px;
+  overflow: hidden;
+ }
+ .f2 {
+   top: 595px;
+   height: 430px;
+ }
+ h1 {
+   font-family: "Zyablik";
+   font-size: 40px;
+   line-height: 40px;
+   top: 83px;
+   left: 17.2vw;
+ }
+ .logo {
+   margin-left: 3vw;
+ }
+ .sob {
+   margin-left: 4.5vw;
+ }
+ .zigzag1, .t1, .t2, .t3 {
+   transform: scale(0.75);
+ }
+ .zigzag1 {
+  top: 89px;
+ }
+ .t1 {
+   left: 80vw;
+   top: 2px;
+ }
+ .t2 {
+   top: -45px;
+   left: 84.5vw;
+ }
+ .t3 {
+   top: -94px;
+   left: 89vw;
+ }
+ .zigzag2 {
+   display: none;
+ }
+ h2 {
+   font-family: "Pragmaticam";
+   font-size: 25px;
+   line-height: 15px;
+   top: -28px;
+   left: 3vw;
+ }
+ p, a {
+   font-family: "Pragmatical";
+   font-size: 18px;
+   line-height: 20px;
+ }
+ .shop1, .shop2 {
+   transform: scale(0.52);
+    width: 768px;
+    margin-left: -22vw;
+    margin-top: -10vw;
+ }
+ .shop2 {
+   margin-top: -90px;
+ }
+ .f2 h2 {
+   top: -36px;
+ }
+ .place1 {
+   margin-left: -2vw;
+ }
+ .place2 {
+   margin-left: 1.8vw;
+ }
+ .place3 {
+   margin-left: 2vw;
+ }
+ .description {
+   width: 54vw;
+ }
+.description p{
+  width: 45vw;
+  }
+  .b1, .b2 {
+    top: -192px;
+    left: 40.5vw;
+    width: 99px;
+    height: 36px;
+ }
+ .b2 {
+   top: 88px;
+   left: 72.5vw;
+ }
+ input {
+   width: 40vw;
+ }
+
+ .form {
+   width: 684px;
+   top: 408px;
+   left: 5vw;
+   height: 366px;
+ }
+ .futter {
+   top: 358px;
+   width: 140%;
+ }
+ .me {
+   margin-left: 5vw;
+ }
+ .sotrud {
+  display: none;
+ }
+ .support {
+    margin-left: 8vw;
+}
+}
+/* iphone 414*896*/
+@media all and (min-device-width: 361px) and (max-device-width: 414px){
+ body {
+  width: 414px;
+  height: 2688px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+  top: 119px;
+  left: 1vw;
+  width: 415px;
+}
+ .f1, .f2 {
+   width: 414px;
+   height: 896px;
+ }
+ .shop1, .shop2 {
+   display: block;
+    width: 414px;
+ }
+ .menu {
+   height: 104px;
+ }
+ .affest, .shop, .we {
+   position: relative;
+   top: 37px;
+   margin-left: 9vw;
+ }
+ .sob {
+   margin-left: 15.5vw;
+ }
+ .map {
+   margin-left: 16vw;
+ }
+ .affest {
+  margin-left: -74vw;
+ }
+ .shop {
+  margin-left: 13vw;
+ }
+ .we {
+  margin-left: 16vw;
+ }
+ .zigzag1, .zigzag2, .t1, .t2, .t3 {
+   display: none;
+ }
+ h2 {
+   font-size: 20px;
+   line-height: 25px;
+   top: 130px;
+ }
+ .shop1, .shop2 {
+   top: 51px;
+    left: -15vw;
+  transform: scale(0.65);
+}
+.place2 {
+  margin-top: 107px;
+  margin-left: 2.8vw;
+}
+.description {
+  width: 108vw;
+}
+.description p {
+ width: 93vw;
+}
+.place3 {
+  margin-top: 119px;
+margin-left: 3vw;
+}
+.f2 h2 {
+  margin-top: 222px;
+}
+.b1 {
+  left: 25.5vw;
+  top: 776px;
+}
+ .futter {
+   bottom: -914px;
+ }
+ .contacts, .support, .sotrud {
+   display: none;
+ }
+ .me {
+   margin-left: 5vw;
+ }
+ .form {
+   width: 346px;
+    height: 639px;
+    top: 1896px;
+    left: 7vw;
+ }
+ input {
+   width: 75vw;
+ }
+ .i3 {
+   width: 48vw;
+ }
+ .b2 {
+   top: 273px;
+   left: 62.2px;
+ }
+ .no {
+   top: 304px;
+    left: 31.5vw;
+ }
+}

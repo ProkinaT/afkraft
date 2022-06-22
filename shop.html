@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/i.ico" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Afkraft.Shop</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <style>
+  body {
+    width: 1440px;
+    height: 1800px;
+    opacity: 1;
+    position: absolute;
+    background: white;
+    overflow-x: hidden;
+  }
+  /* ФРЭЙМ1 */
+  .f1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    transition: all 1s ease;
+  }
+  h1 {
+    position: relative;
+    text-align: center;
+    top: 102px;
+    left: 34.2vw;
+    width: 545px;
+  }
+  .zigzag1 {
+    position: relative;
+    width: 296px;
+    height: 42px;
+    top: 53px;
+    left: 4vw;
+    background-image: url('images/zigzag.svg');
+  }
+  .t1 {
+    position: relative;
+    width: 51px;
+    height: 47px;
+    top: -51px;
+    left: 80.5vw;
+    background-image: url('images/triangle.svg');
+  }
+  .t2 {
+    position: relative;
+    width: 51px;
+    height: 47px;
+    top: -98px;
+    left: 84vw;
+    background-image: url('images/triangle.svg');
+  }
+  .t3 {
+    position: relative;
+    width: 51px;
+    height: 47px;
+    top: -144px;
+    left: 87.5vw;
+    background-image: url('images/triangle.svg');
+  }
+  .zigzag2 {
+    position: relative;
+    width: 296px;
+    height: 42px;
+    top: -97px;
+    left: 75.5vw;
+    background-image: url('images/zigzag.svg');
+  }
+  /* ФРЭЙМ 1 */
+  .shop1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    height: 538px;
+  }
+   h2{
+    display: block;
+    position:relative;
+    top: -45px;
+    left: 4.6vw;
+  }
+  .place1 {
+    display: block;
+    height: 424px;
+    margin-top: -2px;
+    width: 506px;;
+  }
+  .place2 {
+    display: block;
+    height: 424px;
+    margin-top: -2px;
+    margin-left: -1.2vw;
+    width: 456px;;
+  }
+  .place3 {
+    display: block;
+    height: 424px;
+    margin-top: -2px;
+    margin-left:-1vw;
+    width: 426px;;
+  }
+  #ph {
+    position: relative;
+    width: 426px;
+    height: 424px;
+    margin-left: 4.4vw;
+  }
+  #ph1 {
+    position: relative;
+    width: 426px;
+    height: 424px;
+    margin-left: 1.3vw;
+  }
+  #ph2 {
+    position: relative;
+    width: 426px;
+    height: 424px;
+    margin-left: 1.2vw;
+  }
+  .tshirt{
+    background-image: url('images/tshirt.png');
+  }
+  .socks {
+    background-image: url('images/socks.png');
+  }
+  .shopper {
+    background-image: url('images/shopper.png');
+  }
+  .description {
+    display: flex;
+    margin-top: 3px;
+    position: relative;
+    width: 41vw;
+    height: 57px;
+  }
+  .description p{
+    line-height: 25px;
+    margin-top: -1px;
+    width: 27vw;
+  }
+  .d1 {
+    margin-left: 4.5vw;
+  }
+  .plus {
+    background-image: url('images/plus.svg');
+    display: block;
+    cursor: pointer;
+    width: 38px;
+    height: 35px;
+    margin-top: 6px;
+  }
+  .porange {
+    background-image: url('images/plusorange.svg');
+  }
+  .d2 {
+    margin-left: 1.3vw;
+  }
+  .d3 {
+    margin-left: 1vw;
+  }
+  .sizes {
+    display: flex;
+    width: 11vw;
+    height: 20px;
+    margin-left: 4.4vw;
+  }
+  .sizes p{
+    width: 33px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  .s1 {
+    background-color: black;
+  }
+  .s2, .s3, .s5, .s6, .s7 {
+    margin-left: 1.5vw;
+    background-color: black;
+  }
+  .s4 {
+    margin-left: -2.7vw;
+    background-color: black;
+  }
+  .orange {
+    background-color: #D67C0F;
+  }
+  /* ФРЭЙМ2 */
+  .f2 {
+    position: absolute;
+    top: 900px;
+    left: 0;
+    width: 1440px;
+    height: 900px;
+    transition: all 1s ease;
+  }
+  .f2 h2 {
+    margin-top: 44px;
+  }
+  .shop2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    height: 538px;
+  }
+  .book {
+    background-image: url('images/book.png');
+  }
+  .poster1 {
+    background-image: url('images/poster1.png');
+  }
+  .poster2 {
+   background-image: url('images/poster2.png');
+  }
+  button {
+    position: relative;
+    display: block;
+    width: 204px;
+    height: 70px;
+    background: #252525;
+    color: white;
+    font-size: 20px;
+    left: 42.5vw;
+    top: 66px;
+    padding-left: 8px;
+  }
+    .b1:hover {
+    background: #D67C0F;
+  }
+  /* ВСПЛЫВАЛКА */
+  .form {
+    display: none;
+    position: relative;
+    background-color: #D67C0F;
+    width: 864px;
+    height: 414px;
+    top: 1144px;
+    left: 20vw;
+  }
+  input {
+    position: relative;
+    display:block;
+    box-sizing: border-box;
+    background: transparent;
+    width: 29vw;
+    height: 70px;
+    border: 2px solid #252525;
+    font-size: 20px;
+    padding-left: 8px;
+    left: 2.5vw;
+  }
+  input::-webkit-input-placeholder { color: black; }
+
+  .i1 {
+    top: 31px;
+  }
+  .i2 {
+    top: 46px;
+  }
+  .i3 {
+    top: 69px;
+    width: 14vw;
+  }
+  .b2 {
+    top: 94px;
+    left: 41.2vw;
+  }
+  .b2:hover {
+    background: black;
+  }
+  .no {
+    display: block;
+    position: relative;
+    top: 73px;
+    left: 2.5vw;
+    cursor: pointer;
+  }
+  .no:hover {
+    text-decoration:underline;
+  }
+  .appear {
+    display: block;
+  }
+  .blur {
+    filter: blur(5px);
+  }
+</style>
+<link rel="stylesheet" href="stylesheets/responsive_shop.css">
+<script>
+$(document).ready(function(){
+$(".b1").click(function(){
+  $('.form').addClass("appear");
+  $('.f1, .f2').addClass("blur");
+});
+});
+$(function(){
+$(".b2, .no").click(function(){
+  $('.form').removeClass("appear");
+  $('.f1, .f2').removeClass("blur");
+});
+});
+$(function(){
+$('.s1').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.s2').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.s3').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.s4').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.s5').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.s6').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.s7').click(function(){
+  $(this).toggleClass("orange");
+  });
+});
+$(function(){
+$('.plus').click(function(){
+  $(this).toggleClass("porange");
+  });
+});
+function CreditCard(elem){
+    var m = elem.value.length+1;
+    if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
+    event.returnValue= false;
+    else if (m == 5 || m == 10 || m == 15)
+    elem.value += ' ';
+}
+$(function() {
+$('.zigzag1, .zigzag2, .t1, .t2, .t3').draggable();
+});
+</script>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu-items">
+      <a class="logo"  id="input_button_bg_change" href="index.html"</a>
+      <a  class="sob"  id="text" href="events.html">События</a>
+      <a class="map" id="text"  href="map.html">Карта</a>
+      <a  class="affest" id="text" href="affest.html">Affest</a>
+      <a  class="shop" id="text" href="shop.html">Магазин</a>
+      <a class="we" id="text"  href="about.html">О нас</a>
+    </div>
+  </div>
+  <div class="f1">
+    <h1>всё самое африканистое по доступной цене</h1>
+    <div class="zigzag1"></div>
+    <div class="t1"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+    <div class="zigzag2"></div>
+    <h2>На каждый день</h2>
+    <div class="shop1">
+      <div class="place1">
+        <div id="ph" class="tshirt"></div>
+        <div class="description">
+          <p class="d1">Футболка с глубокой печатью<br>500р</p>
+          <div class="plus"></div>
+        </div>
+        <div class="sizes">
+          <p class="s1">S</p>
+          <p class="s2">M</p>
+          <p class="s3">L</p>
+      </div>
+    </div>
+    <div class="place2">
+      <div id="ph1" class="socks"></div>
+      <div class="description">
+        <p class="d2">Носки Afkraft-heads<br>100р</p>
+        <div class="plus"></div>
+      </div>
+      <div class="sizes">
+        <p class="s4">25</p>
+        <p class="s5">27</p>
+        <p class="s6">29</p>
+        <p class="s7">31</p>
+      </div>
+    </div>
+    <div class="place3">
+      <div id="ph2" class="shopper"></div>
+      <div class="description">
+        <p class="d3">Шоппер Afkraft<br>1000р</p>
+        <div class="plus"></div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <div class="f2">
+    <h2>Больше Африки</h2>
+    <div class="shop2">
+      <div class="place1">
+        <div id="ph" class="book"></div>
+        <div class="description">
+          <p class="d1">Книга Afkraft<br>500р</p>
+          <div class="plus"></div>
+        </div>
+      </div>
+      <div class="place2">
+        <div  id="ph1" class="poster1"></div>
+        <div class="description">
+          <p class="d2">Плакат «Африка зовёт» A1<br>100р</p>
+          <div class="plus"></div>
+        </div>
+
+      </div>
+      <div class="place3">
+       <div  id="ph2" class="poster2"></div>
+       <div class="description">
+         <p class="d3">Плакат Affest A1<br>100р</p>
+         <div class="plus"></div>
+       </div>
+      </div>
+    </div>
+    <button class="b1" type="button" name="button">купить</button>
+    <div class="futter">
+      <a  class="contacts"  id="text">Контакты<br>+7-(191)-955-93-82</a>
+      <a class="support" id="text"  href="#">Тех. поддержка</a>
+      <a  class="sotrud" id="text" href="#">Сотрудничество</a>
+      <a  class="me" id="text">designed by<br>Tatiana Prokina</a>
+      <a class="hse"></a>
+    </div>
+  </div>
+  <div class="form">
+    <input class="i1" type="text" name="" value="" placeholder="Ваше имя">
+    <input  class="i2" onKeyPress="CreditCard(this)" type="text" placeholder="Номер карты">
+    <input  class="i3" type="text" name="" placeholder="CVV">
+    <button class="b2" type="button" name="button">оплатить</button>
+    <p class="no">отмена</p>
+  </div>
+</body>
+</html>
