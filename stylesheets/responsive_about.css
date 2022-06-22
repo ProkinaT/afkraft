@@ -217,7 +217,7 @@ h1 {
    width: 400px;
    height: 292px;
    top: 36px;
-   left: 105vw;
+   left: -110vw;
  }
  .tbig {
   background-image: url('../images/g4.svg');
