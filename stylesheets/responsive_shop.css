@@ -71,7 +71,7 @@
    margin-top: -90px;
  }
  .f2 h2 {
-   top: -36px;
+   top: -75px;
  }
  .place1 {
    margin-left: -2vw;
@@ -87,13 +87,17 @@
  }
 .description p{
   width: 45vw;
-  }
-  .b1, .b2 {
-    top: -192px;
-    left: 40.5vw;
-    width: 99px;
-    height: 36px;
- }
+}
+.shop2 {
+  margin-top: -143px;
+}
+}
+.b1, .b2 {
+  top: -192px;
+  left: 40.5vw;
+  width: 99px;
+  height: 36px;
+}
  .b2 {
    top: 88px;
    left: 72.5vw;
