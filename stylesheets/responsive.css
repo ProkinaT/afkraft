@@ -1,6 +1,6 @@
 
 /* pc 1440*900 */
-@media all and (min-device-width: 1367px) {
+@media all and (min-device-width: 1024px) {
  body { width: 1440px; height: 1800px;}
 }
 /* tablet 768*1024 */
