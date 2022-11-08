@@ -12,6 +12,10 @@
   height: 595px;
   overflow: hidden;
  }
+  .futter {
+   top: 358px;
+   width: 140%;
+ }
  .f2 {
    top: 595px;
    height: 430px;
@@ -113,10 +117,7 @@
    left: 5vw;
    height: 366px;
  }
- .futter {
-   top: 358px;
-   width: 140%;
- }
+
  .me {
    margin-left: 5vw;
  }
