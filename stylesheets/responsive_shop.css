@@ -1,18 +1,41 @@
-
 /* pc 1440*900 */
-@media all and (min-device-width: 769px) {
+@media all and (min-device-width: 1024px){
  body { width: 1440px; height: 1800px;}
+ .futter {
+   top: 793px;
+ }
+ .form {
+   width: 864px;
+   height: 414px;
+   top: 1144px;
+   left: 20vw;
+ }
+ .b1 {
+   width: 204px;
+   height: 70px;
+   left: 42.5vw;
+   top: 25px;
+   padding-left: 8px;
+ }
+
 }
 /* tablet 768*1024 */
-/* @media all  and (min-device-width: 415px) and (max-device-width: 768px){
+@media all  and (min-device-width: 415px) and (max-device-width: 768px){
  body {width: 768px; height: 2048px; overflow: hidden;}
  .f1, .f2 {
    width: 768px;
   height: 595px;
   overflow: hidden;
- }}
+ }
+ .form {
+   width: 684px;
+   top: 408px;
+   left: 5vw;
+   height: 366px;
+ }
  .futter {
   width: 140%;
+  top: 353px;
 }
  .f2 {
    top: 595px;
@@ -94,8 +117,7 @@
 .shop2 {
   margin-top: -143px;
 }
-}
-.b1, .b2 {
+.b1 {
   top: -192px;
   left: 40.5vw;
   width: 99px;
@@ -104,18 +126,12 @@
  .b2 {
    top: 88px;
    left: 72.5vw;
+   width: 99px;
+   height: 36px;
  }
  input {
    width: 40vw;
  }
-
- .form {
-   width: 684px;
-   top: 408px;
-   left: 5vw;
-   height: 366px;
- }
-
  .me {
    margin-left: 5vw;
  }
@@ -125,7 +141,7 @@
  .support {
     margin-left: 8vw;
 }
-} */
+}
 /* iphone 414*896*/
 @media all and (max-device-width: 414px){
  body {
