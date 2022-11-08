@@ -2,6 +2,7 @@
 /* pc 1440*900 */
 @media all and (min-device-width: 769px) {
  body { width: 1440px; height: 1800px;}
+     top: 793px;
 }
 /* tablet 768*1024 */
 @media all  and (min-device-width: 415px) and (max-device-width: 768px){
