@@ -5,7 +5,7 @@
  top: 793px;
 }
 /* tablet 768*1024 */
-@media all  and (min-device-width: 415px) and (max-device-width: 768px){
+/* @media all  and (min-device-width: 415px) and (max-device-width: 768px){
  body {width: 768px; height: 2048px; overflow: hidden;}
  .f1, .f2 {
    width: 768px;
@@ -126,7 +126,7 @@
  .support {
     margin-left: 8vw;
 }
-}
+} */
 /* iphone 414*896*/
 @media all and (max-device-width: 414px){
  body {
